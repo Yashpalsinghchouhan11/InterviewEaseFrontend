@@ -323,7 +323,7 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import MicIcon from "@mui/icons-material/Mic";
 import CircularProgress from "@mui/material/CircularProgress";
 import Interviewer from "../assets/Interviewer1.png";
-import { interviewId } from "../Features/questionSlice";
+import { interviewId } from "../features/questionSlice";
 import {
   // interviewId,
   questionId,
@@ -331,9 +331,9 @@ import {
   totalQuestions,
   questions,
   asyncGetQuestions,
-} from "../Features/getQuestions";
-import { user, isAuthenticated } from "../Features/userSlice";
-import { setAnswerAsync } from "../Features/answersSlice";
+} from "../features/getQuestions";
+import { user, isAuthenticated } from "../features/userSlice";
+import { setAnswerAsync } from "../features/answersSlice";
 
 import SpeechRecognition, {
   useSpeechRecognition,

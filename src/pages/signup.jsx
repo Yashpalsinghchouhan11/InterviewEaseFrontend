@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { signupAsync, isAuthenticated } from "../Features/userSlice";
-import { SetErrors, Newerrors } from "../Features/errorSlice";
+import { signupAsync, isAuthenticated } from "../features/userSlice";
+import { SetErrors, Newerrors } from "../features/errorSlice";
 export default function Signup() {
   const [formdata, setFormdata] = useState({
     username: "",

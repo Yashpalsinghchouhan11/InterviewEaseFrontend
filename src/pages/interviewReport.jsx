@@ -5,9 +5,9 @@ import {
   answers,
   asyncgetFeedbackReport,
   feedback,
-} from "../Features/answersSlice";
-import { interviewId } from "../Features/questionSlice";
-import { isAuthenticated } from "../Features/userSlice";
+} from "../features/answersSlice";
+import { interviewId } from "../features/questionSlice";
+import { isAuthenticated } from "../features/userSlice";
 import { useNavigate } from "react-router-dom";
 
 // Icons

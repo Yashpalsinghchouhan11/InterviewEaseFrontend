@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { isAuthenticated } from "../Features/userSlice";
+import { isAuthenticated } from "../features/userSlice";
 import {
   asyncSetQuestions,
-} from "../Features/questionSlice";
+} from "../features/questionSlice";
 
 export default function Category() {
   const dispatch = useDispatch();

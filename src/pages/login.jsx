@@ -2,9 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { isAuthenticated } from "../Features/userSlice";
-import {SetErrors, Newerrors} from "../Features/errorSlice"
-import { loginAsync } from "../Features/userSlice";
+import { isAuthenticated } from "../features/userSlice";
+import {SetErrors, Newerrors} from "../features/errorSlice"
+import { loginAsync } from "../features/userSlice";
 
 export default function Login() {
   const [formdata, setFormdata] = useState({
