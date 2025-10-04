@@ -45,7 +45,6 @@ export default function Signup() {
     if (Object.keys(error).length > 0) {
       dispatch(SetErrors(error));
     } else {
-      console.log(formdata)
       dispatch(signupAsync(formdata));
     }
   };

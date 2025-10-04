@@ -58,7 +58,6 @@ export const asyncSetQuestions = createAsyncThunk('setQuestion', async (formData
             thunkAPI.dispatch(setInterviewId(response.data.interview_id))
         }
     } catch (error) {
-        console.log(error)
         if (error.response.status == 401){
             thunkAPI.dispatch(showToast({ message: "invalid token or may be expire", status: "error" }))
         }

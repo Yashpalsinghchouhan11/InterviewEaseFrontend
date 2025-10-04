@@ -44,7 +44,6 @@ export function ReviewAnswer() {
     if (interview_id) {
       dispatch(asyncGetAnswer(interview_id));
       dispatch(asyncgetFeedbackReport(interview_id));
-      console.log("hello")
     }
   }, [dispatch, interview_id]);
 

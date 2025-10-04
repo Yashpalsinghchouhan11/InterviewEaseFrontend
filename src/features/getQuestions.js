@@ -37,7 +37,6 @@ export const asyncGetQuestions = createAsyncThunk(
             // Await the API response
             const response = await getQuestions(interviewId, index);
             if (response.status === 200) {
-                console.log(response)
                 thunkAPI.dispatch(setIndex(response.data.question_index));
                 thunkAPI.dispatch(setQuestions(response.data.question_text));
                 thunkAPI.dispatch(setTotalQuestion(response.data.total_questions));

@@ -71,7 +71,6 @@ export default function Category() {
       dispatch(asyncSetQuestions(formData));
       navigate("/category/start_interview");
     } else if (mode === "resume") {
-      console.log("Resume interview:", resume);
     }
   };
 
